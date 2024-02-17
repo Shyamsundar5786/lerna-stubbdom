@@ -1,0 +1,22 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Library Demo</title>
+</head>
+<body>
+  <div id="app"></div>
+  <button id="addButton">Add</button>
+  <script src="./packages/ui-library/ui-library.js"></script>
+  <script>
+    // Define a click handler for the "Add" button
+    document.getElementById('addButton').addEventListener('click', function() {
+      // Call the updateState function from ui-library.js
+      updateState(currentState + 1);
+    });
+  </script>
+</body>
+</html>
